@@ -99,3 +99,55 @@
 
 
 /* style da pagina de cadastro */
+
+body{
+    background-image: url("../imagens/banner\(1\).png");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+}
+
+.titulo_pagina{
+    color: white;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 8em 4em 0 4em;
+    font-size: 0.8em;
+}
+
+.cadastro_usuario{
+    margin: 0em 1.5em 0 1.5em;
+    padding: 2em 1em;
+    background-color: #272727;
+    color: #ffffff;
+}
+
+.campo{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+input[type="text"], 
+input[type="date"],
+input[type="email"],
+input[type="password"],
+select{
+    border: none;
+    background-color: #272727;
+    color: #ffffff;
+    border-bottom: 1px solid #FF9D1C;
+    width: 60%;
+    padding: 0.5em;
+}
+
+.campo .check label{
+    flex-direction: row;
+    color: #FF9D1C;
+}

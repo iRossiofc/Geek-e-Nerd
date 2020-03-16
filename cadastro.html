@@ -13,28 +13,27 @@
 
     <main>
         <div class="titulo_pagina">
-            <h1>cadastro de jogador</h1>
+            <h1>Cadastro de Usuário</h1>
         </div>
 
-        <form class="form_cadastro" action="" method="post">
-
+        <form class="cadastro_usuario" action="" method="post">
             <div class="campo">
-                <label for="nome">nome do jogador</label>
+                <label for="nome">nome:</label>
                 <input type="text" name="nomedojogador" id="nome" >
             </div>
 
             <div class="campo">
-                <label for="nick">nick do jogador</label>
+                <label for="nick">nickname:</label>
                 <input type="text" name="nickdojogador" id="nick" >
             </div>
 
             <div class="campo">
-                <label for="nascimento">nascimento</label>
+                <label for="nascimento">data de nascimento:</label>
                 <input type="date" name="nascimento" id="nascimento" max="2020-03-05">
             </div>
 
             <div class="campo">
-                <label for="pais">país</label>
+                <label for="pais">país:</label>
                 <select name="pais" id="pais">
                     <option value="">Selecione uma opção</option>
                     <option value="BR">Brasil</option>
@@ -44,23 +43,24 @@
             </div>
 
             <div class="campo">
-                <label for="email">email</label>
+                <label for="email">email:</label>
                 <input type="email" name="email" id="email" >
             </div>
 
             <div class="campo">
-                <label for="senha">senha</label>
+                <label for="senha">senha:</label>
                 <input type="password" name="senha" id="senha" >
             </div>
 
             <div class="campo">
-                <label for="senha_confirma">repita a senha</label>
+                <label for="senha_confirma">repita a senha:</label>
                 <input type="password" name="senha_confirma" id="senha_confirma" >
             </div>
 
             <div class="campo">
-                <label for="pais">categoria favorita</label>
-                <select name="pais" id="pais">
+                <label for="categoria">categoria favorita:</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Selecione uma opção</option>
                     <option value="Ação">Ação</option>
                     <option value="Aventura">Aventura</option>
                     <option value="Estratégia">Estratégia</option>
@@ -68,9 +68,9 @@
                     <option value="Esporte">Esporte</option>
                     <option value="Corrida">Corrida</option>
                     <option value="Simulação">Simulação</option>
-            </div>        
-
-            <div class="campo">
+            </div>
+            
+            <div class="campo check">
                 <input type="checkbox" name="check" id="check">
                 <label for="check">Declaro que li e aceito os termos de uso desse site</label>
             </div>
