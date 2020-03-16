@@ -1,4 +1,67 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Bellota Text', cursive;
 }
+header{
+    background-color: #272727;
+    width: 1366;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navegador{
+    display: flex;
+    align-items: center;
+  
+    
+}
+.navegador img{
+height: 85px
+
+} 
+.navegador ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around ;
+    margin: auto;
+}
+.navegador li{
+    display: flex;
+    padding: 40px;
+}
+.navegador a {
+color: #FF9100;
+text-decoration: none;
+}
+
+footer{
+    background-color: #171717;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+ height: 150px;   
+}
+footer .socias{
+    display: flex;
+}
+.sociais i{
+    padding: 15px;
+    color: #FF9100;
+    width: 50px;
+    height: auto;
+    
+}
+.contato a{
+  text-decoration: none;
+ color: white;
+ padding: 20px;
+}
+@media 
+   
