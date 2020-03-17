@@ -3,57 +3,75 @@
     padding: 0;
 }
 
-.conrtainer{
-    width: 80%;
-    margin: 0 auto;
+.justify-content-center{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-color: #272727;
+}
+
+.btn{
+    color: #ffffff;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    padding: 0.7em;
+    margin: 1em 0 0.5em 0;
+    background-color: #474747;
+    border: 2px solid #FF9D1C;
 }
 
 header{
     width: 100%;
-    height: 100px;
+    height: 85px;
     background-color: #272727;
 }
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
 .cabecalho{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.links{
-    width: 80%;
-    height: 80px;
+.cabecalho ul li, .cabecalho a{
+    list-style-type: none;
+    color: #FF9D1C;
+}
+
+.cabecalho img{
+    width: 3.2em;
+    margin-top: 0.5em;
+}
+
+.cabecalho li{
+    list-style-type: none;
+}
+
+#menu ul li, #menu ul a{
+    text-decoration: none;
+    list-style: none;
+    padding: 10px 10em 10px 0;
+    color: #FF9D1C;
+}
+
+#menu{
     background-color: #272727;
     position: absolute;
-    top: 100px;
-}
-
-
-.links a{
-    list-style-type: none;
-    color: #FF9100;
-    text-decoration: none;
-    margin-left: 25px;    
-}
-#menu{
+    top: 85px;
+    width: 60%;
+    padding: 2em 3em;
     display: none;
+    z-index: 2;
 }
 
-
-
-header a i{
-    color: #FF9100;
-    font-size: 31px;
-    
-}
-header img{
-    width: 53px;
-}
-main{
-    background-color: #272727;
-    width: 100%;
-    height: 550px;
-}
-
+/* inicio da pagina de login */
 .banner{
     background-image: url(../imagens/Imagem\ 1.jpg);
     background-repeat: no-repeat;
@@ -102,101 +120,6 @@ text-align: center;
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* style da pagina de cadastro */
 
 .cadastro{
@@ -205,7 +128,8 @@ text-align: center;
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
+    position: absolute;
+    z-index: 1;
 }
 
 .titulo_pagina{
@@ -223,6 +147,7 @@ text-align: center;
     padding: 2em 1em;
     background-color: #272727;
     color: #ffffff;
+    box-shadow: 8px 8px 10px #000000;
 }
 
 .campo{
@@ -230,7 +155,7 @@ text-align: center;
 	display: flex;
     justify-content: space-between;
     flex-direction: column;
-align-items: center;
+    align-items: center;
     padding: 0.5em 0;
 }
 
@@ -247,7 +172,14 @@ select{
     padding: 0.5em;
 }
 
-.campo .check label{
-    flex-direction: row;
-    color: #FF9D1C;
+.check{
+    display: flex;
+    margin: 0 auto;
+    max-width: 70%;
+    font-size: 1.1em ;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
 }

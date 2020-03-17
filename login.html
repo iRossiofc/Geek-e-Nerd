@@ -11,29 +11,29 @@
 
 <body>
     <header>
-        <div class="conrtainer cabecalho">
+        <div class="container">
+            <div class="cabecalho">
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="index.html">
+                    <img src="imagens/Logo_Indie_Project.svg" alt="logo do indie project">
+                </a>
+                <li><a href="#" title="buscar conteudo no site"><i class="fas fa-search"></i></a></li>
+            </div>
 
-            <a href="#" onclick="botaoMenu()"><i class="fas fa-bars"></i></a>
-            <img src="imagens/Logo_Indie_Project.svg" alt="logo geek-nerd">
-            <a href="#"><i class="fas fa-search"></i></a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#" title="ir até a seção de jogos">JOGOS</a></li>
+                    <li><a href="#" title="ir até a pagina de desenvolvedores">DESENVOLVEDORES</a></li>
+                    <li><a href="cadastro.html" title="ir até a pagina de cadastro de usuario">CADASTRO</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="menu">
-            <ul class="links">
-
-
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">JOGOS</a></li>
-                <li><a href="#">DESENVOLVEDORES</a></li>
-                <li><a href="#">CADASTRO</a></li>
-
-            </ul>
-        </nav>
-
     </header>
 
-    <main>
-        <div class="banner">
-        </div>
+    <main class="container">
         <div class="sombra">
             <div class="forma">
                 <h1>LOGIN</h1>
@@ -61,16 +61,15 @@
 
 
     <script>
-        function botaoMenu() {
-            var m = document.getElementById("menu")
-            if
-                (m.style.display == "block") {
-                m.style.display = "none";
-            }
-            else {
-                m.style.display = "block"
-            }
+        function botaoMenu(){
+
+        var m = document.getElementById("menu")
+        if(m.style.display == "block"){
+            m.style.display = "none";
+        }else{
+            m.style.display = "block"
         }
+    }
     </script>
 </body>
 
