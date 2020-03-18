@@ -1,42 +1,54 @@
-<script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek e Nerds</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <div class="container">
+
             <div class="cabecalho">
-                <a href="#" onclick="botaoMenu()">
+                <a href="#" onclick="botaoMenu()" class="naveg">
                     <i class="fas fa-bars"></i>
                 </a>
                 <a href="index.html">
                     <img src="imagens/Logo_Indie_Project.svg" alt="logo do indie project">
                 </a>
                 <li><a href="#" title="buscar conteudo no site"><i class="fas fa-search"></i></a></li>
+                
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="#" title="ir até a seção de jogos">JOGOS</a></li>
+                        <li><a href="#" title="ir até a pagina de desenvolvedores">DESENVOLVEDORES</a></li>
+                        <li><a href="cadastro.html" title="ir até a pagina de cadastro de usuario">CADASTRO</a></li>
+                    </ul>
+                </nav>
+                
             </div>
-
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="jogos.html" title="ir até a seção de jogos">JOGOS</a></li>
-                    <li><a href="#" title="ir até a pagina de desenvolvedores">DESENVOLVEDORES</a></li>
-                    <li><a href="cadastro.html" title="ir até a pagina de cadastro de usuario">CADASTRO</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <main class="container">
-        <div class="sombra">
+    <main >
+        <div class="banner_login">
+        </div>
+        <div class="sombra container ">
             <div class="forma">
                 <h1>LOGIN</h1>
 
                 <form action="" method="" class="form_login">
-                    <div class="campo">
+                    <div class="campo1">
                         <label for="nome"> nick do jogador</label>
                         <input type="text" name="nickdojogador" id="nome">
                     </div>
 
-                    <div class="campo">
+                    <div class="campo1">
                         <label for="senha">senha</label>
                         <input type="password" name="senha" id="senha">
                     </div>
