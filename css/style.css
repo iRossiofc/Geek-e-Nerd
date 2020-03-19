@@ -229,26 +229,24 @@ p{
 
 /* style da pagina de cadastro */
 
-.cad{
+.img_cadas{
     width: 100%;
     height: 200px;
 }
 
 .titulo_pagina{
     color: white;
-    background-color: #272727;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-    margin: -5em 4em 0 4em;
+    margin: -7em auto 0 auto;
     font-size: 0.7em;
-    box-shadow: 8px 8px 10px #000000;
 }
 
 .cadastro_usuario{
     margin: 0em 1.5em 0 1.5em;
     padding: 2em 1em;
-    background-color: #272727;
+    background-color: #474747;
     color: #ffffff;
     box-shadow: 8px 8px 10px #000000;
 }
@@ -268,7 +266,7 @@ input[type="email"],
 input[type="password"],
 select{
     border: none;
-    background-color: #272727;
+    background-color: #474747;
     color: #ffffff;
     border-bottom: 1px solid #FF9D1C;
     width: 60%;
@@ -287,6 +285,34 @@ select{
     justify-content: center;
 }
 
+@media only screen and (min-width: 768px){
+    .img_cadas{
+        width: 100%;
+        height: 300px;
+    }
+    .cadastro_usuario{
+        margin: 0em 5.5em 0 5.5em;
+        padding: 2em 1em;
+        background-color: #474747;
+        color: #ffffff;
+        box-shadow: 8px 8px 10px #000000;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .img_cadas{
+        width: 100%;
+        height: 400px;
+    }
+
+    .cadastro_usuario{
+        margin: 0em 10.5em 0 10.5em;
+        padding: 2em 1em;
+        background-color: #474747;
+        color: #ffffff;
+        box-shadow: 8px 8px 10px #000000;
+    }
+}
 
 /* jogos */
 
