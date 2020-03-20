@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +15,21 @@
         <header class="cabecalhoMenu">
             <!-- Conteúdo da barra principal do menu -->
             <div class="conteudoMenu">
-                <a href="#"><i class="fas fa-bars menuHamburguer"></i></a>
-                <img src="imagens/Logo_Indie_Project.svg" alt="" class="logoGeek">
+                <a href="#" onclick="botaoMenu()">
+                    <a href="#"><i class="fas fa-bars menuHamburguer"></i></a>
+                    <img src="imagens/Logo_Indie_Project.svg" alt="" class="logoGeek">
                 <nav class="linksNavegacao">
                     <ul class="linksCabecalho">
-                        <li class="itemNavegacao"><a href="#">inicio</a></li>
-                        <li class="itemNavegacao"><a href="#">jogos</a></li>
+                        <li class="itemNavegacao"><a href="home.html">inicio</a></li>
+                        <li class="itemNavegacao"><a href="paginaJogos.html">jogos</a></li>
                         <li class="itemNavegacao"><a href="#">desenvolvedores</a></li>
-                        <li class="itemNavegacao"><a href="#">cadastro</a></li>
+                        <li class="itemNavegacao"><a href="cadastro.html">cadastro</a></li>
+                        <li class="itemNavegacao"><a href="login.html">login</a></li>
                     </ul>
                 </nav>
                 <a href="#"><i class="fas fa-search"></i></a>
             </div>
-
+    
             <!-- campo de busca do menu -->
             <div class="campoPesquisa">
                 <p>Buscar por jogos, categorias, desenvolvedores...</p>
@@ -160,5 +162,17 @@
             <p>2020 - todos os direitos reservados</p>
         </footer>
         <!-- Fim do rodapé -->
+
+        <script>
+            function botaoMenu() {
+    
+                var m = document.getElementById("menu")
+                if (m.style.display == "block") {
+                    m.style.display = "none";
+                } else {
+                    m.style.display = "block"
+                }
+            }
+        </script>
     </body>
 </html>

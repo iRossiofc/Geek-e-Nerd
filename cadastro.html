@@ -4,32 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>cadastre-se</title>
     <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resetValues.css">
+    <link rel="stylesheet" href="css/menu_rodape.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="cabecalho">
-                <a href="#" onclick="botaoMenu()">
-                    <i class="fas fa-bars"></i>
-                </a>
-                <a href="index.html">
-                    <img src="imagens/Logo_Indie_Project.svg" alt="logo do indie project">
-                </a>
-                <li><a href="#" title="buscar conteudo no site"><i class="fas fa-search"></i></a></li>
-            </div>
-
-            <nav id="menu">
-                <ul>
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="jogos.html" title="ir até a seção de jogos">JOGOS</a></li>
-                    <li><a href="#" title="ir até a pagina de desenvolvedores">DESENVOLVEDORES</a></li>
-                    <li><a href="cadastro.html" title="ir até a pagina de cadastro de usuario">CADASTRO</a></li>
+    <header class="cabecalhoMenu">
+        <!-- Conteúdo da barra principal do menu -->
+        <div class="conteudoMenu">
+            <a href="#" onclick="botaoMenu()">
+                <a href="#"><i class="fas fa-bars menuHamburguer"></i></a>
+                <img src="imagens/Logo_Indie_Project.svg" alt="" class="logoGeek">
+            <nav class="linksNavegacao">
+                <ul class="linksCabecalho">
+                    <li class="itemNavegacao"><a href="#">inicio</a></li>
+                    <li class="itemNavegacao"><a href="#">jogos</a></li>
+                    <li class="itemNavegacao"><a href="#">desenvolvedores</a></li>
+                    <li class="itemNavegacao"><a href="#">cadastro</a></li>
                 </ul>
             </nav>
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+
+        <!-- campo de busca do menu -->
+        <div class="campoPesquisa">
+            <p>Buscar por jogos, categorias, desenvolvedores...</p>
         </div>
     </header>
 
@@ -106,25 +110,23 @@
         </form>
     </main>
 
-    <footer>
-        <div class="container">
-            <h2>Indie Project</h2>
-            <img src="imagens/Logo_Indie_Project.svg" alt="Logo_Indie_Project">
-            <div class="sociais">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-twitter-square"></i>
-            </div>
-            <nav>
-                <ul><a href="#">Fale conosco</a></ul>
-                <ul><a href="#">Regras</a></ul>
-                <ul><a href="#">Suporte</a></ul>
-                <ul><a href="#">Politica de Privacidade</a></ul>
-                <ul><a href="#">Termos de uso</a></ul>
-            </nav>
+    <footer class="rodapePrincipal">
+        <h5>indie project</h5>
+        <img src="imagens/Logo_Indie_Project.svg" alt="" class="logoRodape">
+        <div class="contatosIndie">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>                
         </div>
-        <p>© 2020 - Todos os direitos reservados</p>
-
+        <div class="conteudoRodape">
+            <a href="">institucional</a>
+            <a href="">fale conosco</a>
+            <a href="">regras</a>
+            <a href="">política de privacidade</a>
+            <a href="">termos de uso</a>
+        </div>
+        <hr/>
+        <p>2020 - todos os direitos reservados</p>
     </footer>
     
     <script>
