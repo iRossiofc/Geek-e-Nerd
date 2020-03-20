@@ -18,13 +18,15 @@
         <div class="conteudoMenu">
             <a href="#" onclick="botaoMenu()">
                 <a href="#"><i class="fas fa-bars menuHamburguer"></i></a>
-                <img src="imagens/Logo_Indie_Project.svg" alt="" class="logoGeek">
+                <a href="home.html">
+                <img src="imagens/Logo_Indie_Project.svg" alt="" class="logoGeek"></a>
             <nav class="linksNavegacao">
                 <ul class="linksCabecalho">
-                    <li class="itemNavegacao"><a href="#">inicio</a></li>
-                    <li class="itemNavegacao"><a href="#">jogos</a></li>
-                    <li class="itemNavegacao"><a href="#">desenvolvedores</a></li>
-                    <li class="itemNavegacao"><a href="#">cadastro</a></li>
+                    <li class="itemNavegacao"><a href="home.html">inicio</a></li>
+                    <li class="itemNavegacao"><a href="paginaJogos.html">jogos</a></li>
+                    <li class="itemNavegacao"><a href="cadastroadm.html">desenvolvedores</a></li>
+                    <li class="itemNavegacao"><a href="cadastro.html">cadastro</a></li>
+                    <li class="itemNavegacao"><a href="login.html">login</a></li>
                 </ul>
             </nav>
             <a href="#"><i class="fas fa-search"></i></a>
@@ -98,7 +100,7 @@
     <script>
         function botaoMenu() {
 
-            var m = document.getElementById("menu")
+            var m = document.getElementById("linksNavegacao")
             if (m.style.display == "block") {
                 m.style.display = "none";
             } else {
